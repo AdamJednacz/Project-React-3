@@ -1,11 +1,22 @@
-
+import React, { lazy } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
+
+const LayoutCMS = lazy(() => import('./components/cms/Layout_CMS'));
+const LayoutMobile = lazy(() => import('./components/mobile/Layout_Mobile'));
+
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+      <BrowserRouter>
+
+              <Routes>
+
+                  <Route path='/' element={<LayoutCMS/>}/>
+                  <Route path='/mobile' element={<LayoutMobile/>}/>
+              </Routes>
+
+      </BrowserRouter>
   );
 }
 

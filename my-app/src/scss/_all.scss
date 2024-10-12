@@ -1,2 +1,12 @@
 @import "../scss/settings/_all.scss";
 @import "../scss/styles/_all.scss";
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 90%;
+}
+
