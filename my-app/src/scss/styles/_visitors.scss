@@ -1,0 +1,85 @@
+.visitors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(158, 0, 89, 0.1);
+  padding: 32px 0;
+  margin-bottom: 128px;
+  @include desktop {
+    background-color: unset;
+    padding: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include desktop {
+      background-color: rgba(158, 0, 89, 0.1);
+      border-radius: 20px;
+      padding: 0 32px;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .text {
+
+      img {
+        padding: 16px;
+        width: 42px;
+        border-radius: 50%;
+        background-color: $white;
+      }
+
+      h1 {
+        font-family: "Work Sans", sans-serif;
+        font-size: 1.25rem;
+        line-height: 32px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        max-width: 50%;
+        margin: 16px 0;
+        @include desktop {
+          font-size: 1.75rem;
+          line-height: 40px;
+          max-width: 30%;
+        }
+      }
+
+      p {
+        font-family: "Work Sans", sans-serif;
+        font-size: 1rem;
+        line-height: 30px;
+        margin-bottom: 32px;
+        @include desktop {
+          font-size: 1.25rem;
+          max-width: 40%;
+        }
+      }
+
+      button {
+        align-self: center;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        background-color: #9E0059;
+        color: $white;
+        font-weight: 700;
+        letter-spacing: 2px;
+        border: none;
+        width: 200px;
+        height: 50px;
+        @include desktop {
+          align-self: flex-start;
+          border-radius: 15px;
+          width: 150px;
+        }
+      }
+    }
+    .phones{
+      display: none;
+      @include desktop{
+        display: block;
+      }
+    }
+  }
+}
