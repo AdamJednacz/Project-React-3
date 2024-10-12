@@ -17,8 +17,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     @include desktop {
-      justify-content: space-around;
+      justify-content: center;
     }
     .hamburger {
       cursor: pointer;
@@ -52,31 +53,31 @@ header {
       }
     }
 
-    .logo {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 1rem;
 
-      color:$black;
 
+
+      .text{
+        font-size: 1rem;
+        color:$black;
+        white-space: nowrap;
+      }
       .element{
         display:none;
         border-radius: 0 15px 15px 15px;
         background-color: $primary;
         color: $white;
-        width: 120px;
+        width: 100px;
+        padding: 0 10px;
+        margin-left: 16px;
         height: 30px;
         font-size:0.875rem;
-
         @include desktop {
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-left: 64px;
+
         }
       }
-    }
 
 
     .menu {
@@ -89,13 +90,14 @@ header {
       opacity: 0;
       height: 0;
       background-color: $primary-10;
-      top: 0;
+      top: -50%;
       left: 0;
       right: 0;
-      bottom: 10%;
+      bottom: 50%;
       transition: opacity 0.4s ease-in-out, height 0.4s ease-in-out;
 
       &.open {
+        top: 0;
         height: 100vh;
         opacity: 1;
         z-index: 1;
@@ -106,53 +108,53 @@ header {
         opacity: 1;
         height: auto;
         flex-direction: row;
+        margin: 0 auto;
+
       }
 
       &_item {
         font-weight: 700;
-        padding: 1.5rem;
+        margin: 0 16px;
+        padding: 24px 0;
         white-space: nowrap;
       }
+
     }
 
-    .buttons_container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: fixed;
-      opacity: 0;
-      top: 60%;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      max-height: 0;
-      transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
-
-      &.open {
-        opacity: 1;
-        max-height: 100vh;
-        z-index: 1;
-      }
-
-      @include desktop {
-        position: static;
-       max-height: unset;
-        opacity: 1;
-      }
-
       .join{
+
         border: none;
         background-color: $primary;
         font-size:0.875rem;
         color: $white;
-        width: 150px;
-        height: 32px;
+        padding: 9px 29.5px;
         border-radius: 50px;
         font-weight: 700;
         letter-spacing: 2px;
-        margin: 0 8px;
+
+
+
+        z-index: 0;
+        opacity: 0;
+        position:fixed;
+        top: -50%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        align-self: center;
+        transition: opacity 0.4s ease-in-out,top 0.4s ease-in-out;
+        &.open{
+          top: 75%;
+          z-index: 1;
+          opacity: 1;
+        }
+        @include desktop {
+          display: block;
+          position: unset;
+          transform: unset;
+          max-height: unset;
+          opacity: 1;
+        }
       }
     }
   }
-}
