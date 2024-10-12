@@ -116,8 +116,8 @@ main {
           position: absolute;
 
           content: '';
-          top: 0%;
-          left: 0%;
+          top: 0;
+          left: 0;
           transform: translate(-5%, 15%) rotate(-10deg);
           background-color:$primary-60;
           width: 100%;
@@ -141,7 +141,7 @@ main {
       .img1 {
         display: none;
         @include desktop {
-          width: 650px;
+          width: 100%;
           display: block;
           transform: rotate(-3deg);
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);

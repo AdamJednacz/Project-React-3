@@ -3,6 +3,7 @@ import Header from "./Header";
 import Main from "./Main";
 import Mission from "./Mission";
 import Visitors from "./Visitors";
+import Overview from "./Overview";
 
 const LayoutCms = () => {
     return (
@@ -11,6 +12,7 @@ const LayoutCms = () => {
          <Main/>
          <Mission/>
          <Visitors/>
+         <Overview/>
         </>
     );
 };
