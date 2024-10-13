@@ -1,0 +1,204 @@
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  color: $black;
+  background-color: #F3F4FF;
+  @include desktop{
+    padding: 0 0 48px 0 ;
+   margin-bottom: 128px;
+  }
+
+  .container {
+    flex-direction: column;
+
+    .pricing_text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+
+      h1 {
+        line-height: 60px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        font-weight: 700;
+        color: $primary;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-family: "Bree Serif", serif;
+        line-height: 32px;
+        @include desktop {
+          font-size: 3rem;
+          line-height: 60px;
+        }
+
+      }
+
+      p {
+        font-family: "Work Sans", serif;
+        font-size: 1rem;
+        line-height: 22px;
+        color: #6F7078;
+        font-weight: 500;
+        margin: 16px 0 48px;
+        max-width: 90%;
+        @include desktop {
+          line-height: 30px;
+          margin: 48px 0;
+
+        }
+      }
+    }
+
+    .pricing_cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @include desktop {
+        flex-direction: row;
+      }
+
+      .card {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 16px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        background-color: $white;
+        margin: 0 16px 32px 16px;
+        color: $black;
+        position: relative;
+
+
+        @include desktop {
+          margin: 0;
+          &:nth-of-type(1) {
+            border-radius: 15px 0 0 15px;
+            width: 20%;
+
+          }
+          &:nth-of-type(3) {
+            border-radius: 0 15px 15px 0;
+            width: 20%;
+          }
+        }
+
+        &:nth-of-type(2) {
+          background-color: $primary-80;
+          color: $white;
+          scale: 1.05;
+          margin: 48px 16px;
+
+
+          @include desktop {
+            width: 20%;
+            margin: 0;
+            z-index: 1;
+          }
+        }
+
+        p {
+          max-width: 90%;
+          text-align: center;
+          margin-bottom: 16px;
+        }
+
+        .annotation {
+          background-color: $white;
+          color: $black;
+          letter-spacing: 1px;
+          font-weight: 600;
+          padding: 10px 5px;
+          font-size: 0.75rem;
+          border-radius: 15px;
+          margin: 16px 0 32px;
+          width: 90%;
+        }
+
+        .ann2 {
+          background-color: #9E0059;
+          color: $white;
+        }
+
+        .star {
+          width: 64px;
+          height: 64px;
+          background-color: $white;
+          background-position: center;
+          border-radius: 50%;
+          position: absolute;
+          top: -15px;
+          left: -15px;
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+
+        &_price {
+          font-size: 1rem;
+          font-weight: 600;
+          margin: 32px 0;
+        }
+
+        span {
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin: 32px 0;
+        }
+      .starter_span{
+        @include desktop {
+          margin: 64px 0;
+        }
+      }
+        ul {
+          list-style-position: outside;
+          max-width: 90%;
+
+          li {
+            font-weight: 600;
+            text-align: left;
+            list-style: inside;
+            margin-bottom: 20px;
+          }
+        }
+
+        button {
+          align-self: center;
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 1px;
+          color: $white;
+          border-radius: 15px;
+          border: none;
+          width: 90%;
+          height: 40px;
+          margin-top: 48px;
+        }
+
+        .premium_button {
+          background-color: #9E0059;
+        }
+
+        .starter_button {
+          background-color: #9E0059;
+        }
+
+        .regular_button {
+          background-color: $white;
+          color: $primary;
+        }
+      }
+    }
+  }
+}

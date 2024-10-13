@@ -23,7 +23,6 @@ const Connectivity = () => {
                                 backgroundImage: `url(${img1})`,
                                 backgroundSize: 'auto',
                                 backgroundRepeat: 'no-repeat',
-
                             }}
                         ></div>
                         <h3>Menu card</h3>
@@ -36,7 +35,6 @@ const Connectivity = () => {
                                 backgroundImage: `url(${img2})`,
                                 backgroundSize: 'auto',
                                 backgroundRepeat: 'no-repeat',
-
                             }}
                         ></div>
                         <h3>Cupons</h3>
@@ -49,7 +47,6 @@ const Connectivity = () => {
                                 backgroundImage: `url(${img3})`,
                                 backgroundSize: 'auto',
                                 backgroundRepeat: 'no-repeat',
-
                             }}
                         ></div>
                         <h3>Explore places</h3>
@@ -62,7 +59,6 @@ const Connectivity = () => {
                                 backgroundImage: `url(${img4})`,
                                 backgroundSize: 'auto',
                                 backgroundRepeat: 'no-repeat',
-
                             }}
                         ></div>
                         <h3>Reviews</h3>
