@@ -1,0 +1,157 @@
+.connectivity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+
+  .container {
+    flex-direction: column;
+    @include desktop{
+      flex-direction: row;
+    }
+    .connectivity_text {
+      display: flex;
+      flex-direction: column;
+      @include desktop{
+        max-width: 30%;
+      }
+      h1 {
+
+        font-size: 1rem;
+        line-height: 60px;
+        letter-spacing: 4px;
+        font-weight: 700;
+        color: $primary;
+
+      }
+
+      h2 {
+        font-family: "Bree Serif", sans-serif;
+        font-size: 1.5rem;
+        line-height: 30px;
+        font-weight: 400;
+        color: $black;
+        @include desktop{
+          font-size: 2.25rem;
+          line-height: 60px;
+          margin-bottom: 64px;
+        }
+        span {
+          color: #9E0059;
+        }
+
+
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 30px;
+        font-weight: 500;
+        color: #6F7078;
+        margin: 32px 0 48px;
+        @include desktop{
+          margin: 0 0 24px 0;
+
+        }
+      }
+      .p_desktop{
+        display: none;
+        @include desktop{
+          display: block;
+          margin-bottom: 48px;
+        }
+      }
+      button {
+        align-self: center;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: $white;
+        border-radius: 20px;
+        background-color: #9E0059;
+        border: none;
+        width: 270px;
+        height: 50px;
+        margin-bottom: 48px;
+        @include desktop{
+          align-self: flex-start;
+        }
+      }
+    }
+
+    .connectivity_cards {
+      @include desktop{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        height: 100%;
+      }
+      &_card {
+        background-color: #F1F1F1;
+        padding: 24px;
+        margin-bottom: 32px;
+        border-radius: 20px;
+        @include desktop{
+          width: 35%;
+          background-color: $white;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+          margin: 0;
+        }
+        .svg {
+          background-position: center;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          @include desktop{
+            width: 52.5px;
+            height: 52.5px;
+          }
+        }
+
+        .red {
+          background-color: rgba(158, 0, 89, 0.16);
+        }
+
+        .blue {
+
+          background-color: rgba(70, 89, 255, 0.16)
+        }
+
+        .green{
+          background-color: rgba(4, 157, 102, 0.16)
+        }
+
+        .purple {
+          background-color: rgba(109, 34, 145, 0.16)
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          line-height: 40px;
+          letter-spacing: 1px;
+          margin: 16px 0;
+          @include desktop{
+            font-size: 1rem;
+            line-height: 22.5px;
+          }
+        }
+
+        p {
+          color: #6F7078;
+          font-size: 1rem;
+          line-height: 30px;
+          font-weight: 500;
+          @include desktop{
+            font-size: 0.75rem;
+            line-height: 17px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
