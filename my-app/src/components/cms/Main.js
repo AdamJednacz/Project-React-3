@@ -1,6 +1,6 @@
 import React from 'react';
 import img1 from "../../assets/languages_configure.png"
-import img2 from "../../assets/phone.jpg"
+
 import img3 from "../../assets/iphone_14.png"
 
 const Main = () => {

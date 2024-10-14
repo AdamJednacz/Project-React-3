@@ -6,6 +6,7 @@ import Visitors from "./Visitors";
 import Overview from "./Overview";
 import Connectivitiy from "./Connectivitiy";
 import Pricing from "./Pricing";
+import ContactUs from "./ContactUs";
 
 const LayoutCms = () => {
     return (
@@ -17,6 +18,7 @@ const LayoutCms = () => {
          <Overview/>
          <Connectivitiy/>
          <Pricing/>
+         <ContactUs/>
         </>
     );
 };
