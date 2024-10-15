@@ -7,6 +7,7 @@ import Overview from "./Overview";
 import Connectivitiy from "./Connectivitiy";
 import Pricing from "./Pricing";
 import ContactUs from "./ContactUs";
+import Footer from "./Footer";
 
 const LayoutCms = () => {
     return (
@@ -19,6 +20,7 @@ const LayoutCms = () => {
          <Connectivitiy/>
          <Pricing/>
          <ContactUs/>
+         <Footer/>
         </>
     );
 };
