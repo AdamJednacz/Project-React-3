@@ -124,6 +124,9 @@
             max-width:60%;
             line-height: 120%;
           }
+          @include tablet{
+            max-width: 80%;
+          }
         }
         p {
           max-width: 90%;
