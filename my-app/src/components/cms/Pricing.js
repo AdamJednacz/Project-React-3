@@ -35,7 +35,7 @@ const Pricing = () => {
                             }}
                         ></div>
                         <h3>Regular Plan</h3>
-                        <p className="card_price"><span>$59</span>/month</p>
+                        <p className="card_price regular_card_price "><span className="regular_span">$59</span>/month</p>
                         <p className="annotation">ALL STARTED FEATURES</p>
 
                         <p className="regular_p">Vestibulum ipsum neque, congue in risus id, vulputate pretium ligula.

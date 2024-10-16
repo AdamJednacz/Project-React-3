@@ -29,6 +29,9 @@ display: flex;
         @include desktop{
           padding: 48px;
         }
+        @include tablet{
+          padding: 40px;
+        }
       }
 
       &:nth-of-type(2){
