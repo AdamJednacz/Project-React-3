@@ -11,9 +11,9 @@ footer{
     align-items: center;
     flex-direction: column;
     .footer_row{
-display: flex;
+      display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       width: 100%;
       padding: 24px 0 ;
       gap:16px;
@@ -25,6 +25,7 @@ display: flex;
         gap:64px
       }
 
+
       &:nth-of-type(1){
         @include desktop{
           padding: 48px;
@@ -35,10 +36,12 @@ display: flex;
       }
 
       &:nth-of-type(2){
+        justify-content: space-between;
         @include desktop{
           justify-content: flex-start;
 
         }
+
         position: relative;
         &::before{
           position: absolute;
@@ -65,10 +68,17 @@ display: flex;
         }
       }
       &_left{
+
         display: flex;
         align-items:center;
         gap: 16px;
-
+        margin: 0 auto;
+        @include desktop{
+          margin: unset;
+        }
+        @include tablet{
+          margin: unset;
+        }
         h1{
           font-size: 1rem;
           color:$black;
@@ -94,10 +104,20 @@ display: flex;
         padding: 5px 20px;
         background-color: $primary;
         border-radius:20px;
+        margin: 0 auto;
+        @include desktop{
+          margin: unset;
+        }
+        @include tablet{
+          margin: unset;
+        }
       }
 
       &_col{
-
+          margin: 0 auto;
+        @include desktop{
+          margin: unset;
+        }
         h2{
           font-size: 1.25rem;
           font-weight: 700;
@@ -106,6 +126,11 @@ display: flex;
         }
         p{
           margin-bottom: 8px ;
+          transition: font-weight 0.25s ease-in-out;
+          cursor: pointer;
+          &:hover{
+            font-weight: 700;
+          }
         }
       }
     }

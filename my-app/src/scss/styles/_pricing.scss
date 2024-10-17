@@ -6,7 +6,7 @@
   color: $black;
   background-color: #F3F4FF;
   @include desktop{
-    padding: 0 0 48px 0 ;
+    padding: 16px 0 48px 0 ;
    margin-bottom: 128px;
   }
 
@@ -26,6 +26,9 @@
         letter-spacing: 4px;
         font-weight: 700;
         color: $primary;
+        @include desktop{
+          line-height: 40px;
+        }
       }
 
       h2 {
@@ -49,7 +52,7 @@
         max-width: 90%;
         @include desktop {
           line-height: 30px;
-          margin: 48px 0;
+          margin: 32px 0;
 
         }
       }
@@ -81,8 +84,8 @@
 
         @include desktop {
           margin: 0;
-          width: 340px;
-          height: 460px;
+          width: 320px;
+          height: 440px;
 
           &:nth-of-type(1) {
             border-radius: 15px 0 0 15px;
@@ -109,8 +112,8 @@
             max-width:343px ;
           }
           @include desktop {
-            width: 475px;
-            height: 650px;
+            width: 455px;
+            height: 630px;
             margin: 0;
             justify-content: space-between;
             h3{
@@ -220,10 +223,17 @@
           width: 90%;
           height: 40px;
           margin-top: 48px;
+          transition: background-color 0.5s ease-in-out,color 0.5s ease-in-out;
+          &:hover {
+            background-color: rgba(	158, 0, 89,0.6);
+          }
         }
 
         .premium_button {
           background-color: #9E0059;
+          @include tablet{
+            margin-top: 16px;
+          }
         }
 
         .starter_button {
@@ -233,10 +243,15 @@
         .regular_button {
           background-color: $white;
           color: $primary;
+          &:hover{
+            background-color: $primary;
+            color: $white;
+          }
           @include desktop{
             height: 50px;
             border-radius: 20px;
             font-size: 1rem;
+            margin: 0;
           }
         }
       }

@@ -12,7 +12,9 @@ header {
   font-weight: 700;
   letter-spacing: 2px;
   color: $black;
+
   background-color: $primary-10;
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -27,7 +29,15 @@ header {
     .hamburger {
       cursor: pointer;
       display: block;
-      z-index: 2;
+
+
+      z-index: 1001;
+      &.open{
+        position: fixed;
+        right: 25px;
+        top: 15px;
+
+      }
       @include desktop {
         display: none;
       }
@@ -43,6 +53,7 @@ header {
         transition: all 0.3s ease-in-out;
         background: $black;
         border-radius:32px ;
+        z-index: 1000;
       }
 
       &.open .bar:nth-child(2) {
@@ -89,6 +100,7 @@ header {
 
 
     .menu {
+
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -106,9 +118,11 @@ header {
 
       &.open {
         top: 0;
+        bottom: 0;
         height: 100svh;
         opacity: 1;
-        z-index: 1;
+        z-index: 1000;
+      overflow: hidden;
       }
 
       @include desktop {
@@ -135,13 +149,29 @@ header {
         transition: opacity 0.4s ease-in-out, height 0.4s ease-in-out;
 
       }
+
       &_item {
         font-weight: 700;
         margin: 0 16px;
         padding: 24px 0;
         white-space: nowrap;
+        cursor: pointer;
+        transition: color 0.5s ease-in-out, scale 0.5s ease-in-out;
+        &:hover {
+          scale: 1.1;
+          color: $black;
+        }
+
+
+        &.hover {
+          color: #6F7078;
+        }
       }
 
+
+      &:hover .menu_item:not(:hover) {
+        color: $primary-40;
+      }
     }
 
       .join{
@@ -162,21 +192,26 @@ header {
         transform: translateX(-50%);
         display: block;
         align-self: center;
-        transition: opacity 0.4s ease-in-out,top 0.4s ease-in-out;
+        transition: opacity 0.4s ease-in-out,top 0.4s ease-in-out,background-color 0.5s ease-in-out;
         &.open{
           top: 75%;
-          z-index: 1;
+          z-index: 1000;
           opacity: 1;
         }
 
+        &:hover{
+          background-color: $primary-60;
+        }
         @include desktop {
           display: block;
           position: unset;
           transform: unset;
           max-height: unset;
           opacity: 1;
+
         }
         @include tablet{
+          white-space: nowrap;
           border: none;
           background-color: $primary;
           font-size:0.875rem;
@@ -196,7 +231,7 @@ header {
           transition: opacity 0.4s ease-in-out,top 0.4s ease-in-out;
           &.open{
             top: 75%;
-            z-index: 1;
+            z-index: 1000;
             opacity: 1;
           }
         }

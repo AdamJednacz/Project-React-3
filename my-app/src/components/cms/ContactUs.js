@@ -7,7 +7,7 @@ import img3 from "../../assets/localization_icon.png"
 
 const ContactUs = () => {
     return (
-        <section className="contact_us">
+        <section id="contact" className="contact_us">
             <div className="container">
                 <div className="contact_us_text">
                     <h1>CONTACT US</h1>
@@ -60,7 +60,6 @@ const ContactUs = () => {
                 </div>
                 <form className="contact_us_form">
                     <div className="form_inputs">
-
                         <input type="text" placeholder="Name"/>
                         <input type="email" placeholder="Email"/>
                         <input type="number" placeholder="Phone"/>

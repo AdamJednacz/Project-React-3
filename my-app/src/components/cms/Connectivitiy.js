@@ -6,7 +6,7 @@ import img4 from "../../assets/star.png";
 
 const Connectivity = () => {
     return (
-        <section className="connectivity">
+        <section id="connectivity" className="connectivity">
             <div className="container">
                 <div className="connectivity_text">
                     <h1>CONNECTIVITY</h1>
@@ -15,7 +15,7 @@ const Connectivity = () => {
                     <p className="p_desktop">Vestibulum ipsum neque, congue in risus id, vulputate pretium ligula. Aliquam quis urna in nibh laoreet imperdiet. Donec at lacus cursus, pulvinar nunc quis, rhoncus nulla</p>
                     <button>ASK FOR DETAILS</button>
                 </div>
-                <div className="connectivity_cards">
+                <div id="features" className="connectivity_cards">
                     <div className="connectivity_cards_card">
                         <div
                             className="svg red"

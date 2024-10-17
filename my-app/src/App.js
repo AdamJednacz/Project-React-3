@@ -4,7 +4,7 @@ import './App.scss';
 
 const LayoutCMS = lazy(() => import('./components/cms/Layout_CMS'));
 const LayoutMobile = lazy(() => import('./components/mobile/Layout_Mobile'));
-
+const InProgress = lazy(() => import('./components/cms/InProgress'));
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
 
                   <Route path='/' element={<LayoutCMS/>}/>
                   <Route path='/mobile' element={<LayoutMobile/>}/>
+                  <Route path='/inprogres' element={<InProgress/>}/>
               </Routes>
 
       </BrowserRouter>

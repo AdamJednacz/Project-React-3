@@ -5,7 +5,7 @@ import img2 from "../../assets/languages_configure.png"
 
 const Overview = () => {
     return (
-        <section className="overview">
+        <section id="overview" className="overview">
             <div className="container">
                 <div className="text">
                     <h1>OVERVIEW</h1>

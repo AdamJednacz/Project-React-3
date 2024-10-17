@@ -76,6 +76,10 @@
         width: 270px;
         height: 50px;
         margin-bottom: 48px;
+        transition: background-color 0.5s ease-in-out;
+        &:hover {
+          background-color: rgba(	158, 0, 89,0.6);
+        }
         @include desktop{
           align-self: flex-start;
         }

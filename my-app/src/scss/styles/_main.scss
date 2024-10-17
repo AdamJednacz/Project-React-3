@@ -98,6 +98,7 @@ main {
           border: none;
           font-weight: 600;
           font-size: 0.75rem;
+          transition: background-color 0.5s ease-in-out;
           @include desktop {
             font-size: 0.75rem;
             letter-spacing: 2px;
@@ -105,11 +106,16 @@ main {
 
           &:first-of-type {
             background-color: $primary-80;
-
+            &:hover{
+              background-color: $primary-60;
+            }
           }
 
           &:last-of-type {
             background-color: #9E0059;
+            &:hover {
+            background-color: rgba(	158, 0, 89,0.6);
+            }
           }
 
 

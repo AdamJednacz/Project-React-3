@@ -177,6 +177,11 @@
         border:solid 1px $white;
         padding: 10px 14px;
         background-color: transparent;
+        transition: background-color 0.5s ease-in-out ,color 0.5s ease-in-out;
+        &:hover{
+          background-color: $white;
+          color: $primary;
+        }
         @include desktop{
           align-self: flex-start;
         }

@@ -5,7 +5,7 @@ const Pricing = () => {
 
 
     return (
-        <section className="pricing">
+        <section id="pricing" className="pricing">
             <div className="container">
                 <div className="pricing_text">
                     <h1>PRICING</h1>
@@ -13,7 +13,7 @@ const Pricing = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur ex sed sapien facilisis
                         egestas.</p>
                 </div>
-                <div className="pricing_cards">
+                <div  className="pricing_cards">
                     <div className="card">
                         <h3>Starter Plan</h3>
                         <span className="starter_span">$0</span>
