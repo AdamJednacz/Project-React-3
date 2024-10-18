@@ -35,7 +35,7 @@ const Overview = () => {
                         </div>
                         <div className="description_text_arrow">
                             <p>READ MORE</p>
-                            <img src={arrow} alt=""/>
+                            <img className="description_text_arrow_img" src={arrow} alt=""/>
                         </div>
                     </div>
                     <div className="description_text_img_container">
