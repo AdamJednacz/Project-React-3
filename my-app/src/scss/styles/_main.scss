@@ -123,10 +123,17 @@ main {
       }
     }
 
+    .no_before{
+      &::before {
+        display: none;
+      }
+    }
     .img_container {
       position: absolute;
       top: 25%;
       right: 0;
+
+
       @include desktop {
         position: relative;
         top: 0;

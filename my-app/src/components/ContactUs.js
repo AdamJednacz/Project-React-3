@@ -1,8 +1,8 @@
 import React from 'react';
 
-import img1 from "../../assets/phone_icon.png"
-import img2 from "../../assets/mail_icon.png"
-import img3 from "../../assets/localization_icon.png"
+import img1 from "../assets/phone_icon.png"
+import img2 from "../assets/mail_icon.png"
+import img3 from "../assets/localization_icon.png"
 
 
 const ContactUs = () => {

@@ -1,16 +1,21 @@
 import React from 'react';
-import img1 from "../../assets/menu.svg";
-import img2 from "../../assets/cupon.png";
-import img3 from "../../assets/localization.svg";
-import img4 from "../../assets/star.png";
+import img1 from "../assets/menu.svg";
+import img2 from "../assets/cupon.png";
+import img3 from "../assets/localization.svg";
+import img4 from "../assets/star.png";
 
-const Connectivity = () => {
+const Connectivity = ({pageType}) => {
     return (
         <section id="connectivity" className="connectivity">
             <div className="container">
                 <div className="connectivity_text">
-                    <h1>CONNECTIVITY</h1>
-                    <h2>Configurable <span>connectivity</span> tools</h2>
+                    <h1>{pageType === 'mobile'
+                        ? 'FEATURES'
+                        : 'CONNECTIVITY+'}</h1>
+                    {pageType === 'mobile'
+                        ? <h2>General <span>Activities</span></h2>
+                        :    <h2>Configurable <span>connectivity</span> tools</h2>}
+
                     <p>Vestibulum ipsum neque, congue in risus id, vulputate pretium ligula. Aliquam quis urna in nibh laoreet imperdiet. Donec at lacus cursus, pulvinar nunc quis, rhoncus nulla</p>
                     <p className="p_desktop">Vestibulum ipsum neque, congue in risus id, vulputate pretium ligula. Aliquam quis urna in nibh laoreet imperdiet. Donec at lacus cursus, pulvinar nunc quis, rhoncus nulla</p>
                     <button>ASK FOR DETAILS</button>

@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import { Link } from 'react-scroll';
 
-const Header = () => {
+const Header = ({ pageType }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleOpenMenu = () => {
@@ -15,7 +15,7 @@ const Header = () => {
         <header>
             <div className="container">
                 <p className="text">PLACE TO</p>
-                <p className="element">CMS</p>
+                <p className={`element ${pageType=== 'mobile' ? 'green':'blue'}`}>{pageType === 'mobile' ? 'MOBILE' : 'CMS'}</p>
                 <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={handleOpenMenu}>
                     <span className="bar"></span>
                     <span className="bar"></span>

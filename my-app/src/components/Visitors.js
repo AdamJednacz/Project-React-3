@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from "../../assets/hand.svg"
+import img1 from "../assets/hand.svg"
 
-import img2 from "../../assets/phones.jpg"
+import img2 from "../assets/phones.jpg"
 const Visitors = () => {
     return (
         <section className="visitors">

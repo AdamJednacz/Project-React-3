@@ -1,5 +1,5 @@
 import React from 'react';
-import img from "../../assets/gold_star.png"
+import img from "../assets/gold_star.png"
 
 const Pricing = () => {
 
