@@ -164,7 +164,7 @@ main {
 
       }
 
-      .img1 {
+      .img1, .img2 {
         display: none;
         @include desktop {
           width: 100%;
@@ -176,6 +176,9 @@ main {
         }
 
 
+      }
+      .img2{
+        box-shadow: none;
       }
 
 
